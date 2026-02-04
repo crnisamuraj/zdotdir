@@ -1,0 +1,8 @@
+.zcompcache/
+.antidote/
+.zsh_history
+.zsh_plugins.zsh
+.zcompdump
+.zhistory
+.p10k.zsh
+.zhistory-old

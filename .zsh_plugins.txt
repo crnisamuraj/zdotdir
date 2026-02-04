@@ -1,0 +1,11 @@
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+romkatv/powerlevel10k
+getantidote/use-omz
+zsh-users/zsh-syntax-highlighting
+
+# Oh My Zsh plugins
+#ohmyzsh/ohmyzsh path:lib
+#ohmyzsh/ohmyzsh path:plugins/extract
+MoonshotAI/zsh-kimi-cli
