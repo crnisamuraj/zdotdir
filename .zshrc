@@ -8,23 +8,6 @@ fi
 
 ZSH_AUTOSUGGEST_STRATEGY=(history)
 
-# Antidote bootstrap (interactive shells only).
-if [[ -o interactive ]]; then
-  # # Check if antidote is missing install from git
-  # if [[ ! -d ${ZDOTDIR:-$HOME}/.antidote ]]; then
-  #   if command -v git >/dev/null 2>&1; then
-  #     git clone https://github.com/mattmc3/antidote ${ZDOTDIR:-$HOME}/.antidote
-  #   else
-  #     print -u2 "git not found; cannot clone antidote."
-  #   fi
-  # fi
-  source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
-  antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
-fi
-
-# Set any zstyles you might use for configuration.
-[[ ! -f ${ZDOTDIR:-$HOME}/.zstyles ]] || source ${ZDOTDIR:-$HOME}/.zstyles
-
 # # Source anything in .zshrc.d.
 if [ -d ${ZDOTDIR:-$HOME}/.zshrc.d ]; then
   for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
@@ -35,6 +18,21 @@ if [ -d ${ZDOTDIR:-$HOME}/.zshrc.d ]; then
   done
   unset _rc
 fi
+
+# Antidote bootstrap (interactive shells only).
+if [[ -o interactive ]]; then
+
+  if [[ -n $HOMEBREW_PREFIX && -d $HOMEBREW_PREFIX/opt/antidote/share/antidote ]]; then
+    source $HOMEBREW_PREFIX/opt/antidote/share/antidote/antidote.zsh
+  elif [[ -d ${ZDOTDIR:-$HOME}/.antidote ]]; then
+    source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
+  fi
+
+  antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
+fi
+
+# Set any zstyles you might use for configuration.
+[[ ! -f ${ZDOTDIR:-$HOME}/.zstyles ]] || source ${ZDOTDIR:-$HOME}/.zstyles
 
 ### To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh

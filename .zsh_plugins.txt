@@ -8,4 +8,5 @@ zsh-users/zsh-syntax-highlighting
 # Oh My Zsh plugins
 #ohmyzsh/ohmyzsh path:lib
 #ohmyzsh/ohmyzsh path:plugins/extract
+
 MoonshotAI/zsh-kimi-cli
