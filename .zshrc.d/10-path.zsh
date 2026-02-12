@@ -11,6 +11,7 @@ path=(
   $HOME/.scripts(N)
   $HOME/.local/{,s}bin(N)
   $HOME/Applications(N)
+  /opt/homebrew/{,s}bin(N)
   /home/linuxbrew/.linuxbrew/{,s}bin(N)
   $NPM_PACKAGES/bin(N)
   /usr/local/{,s}bin(N)
