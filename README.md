@@ -29,13 +29,21 @@ brew install --cask font-meslo-for-powerlevel10k
 
 Restart your terminal after changing the font.
 
-### 2. Clone the repo
+### 2. Install antidote
+
+[Antidote](https://antidote.sh) is the plugin manager used by this config.
+
+```zsh
+brew install antidote
+```
+
+### 3. Clone the repo
 
 ```zsh
 git clone https://github.com/crnisamuraj/zdotdir.git ~/.config/zsh
 ```
 
-### 3. Set up `~/.zshenv`
+### 4. Set up `~/.zshenv`
 
 Create `~/.zshenv` with the following content. This is the only file that must live outside `$ZDOTDIR` — it bootstraps the config by pointing Zsh to the right location.
 
@@ -58,13 +66,13 @@ export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
 [[ -r "$ZDOTDIR/.zshenv" ]] && source "$ZDOTDIR/.zshenv"
 ```
 
-### 4. Suppress the "Last login" message
+### 5. Suppress the "Last login" message
 
 ```zsh
 touch ~/.hushlogin
 ```
 
-### 5. Configure the prompt
+### 6. Configure the prompt
 
 Open a new terminal session. Powerlevel10k will launch its interactive configuration wizard automatically. If it doesn't, run:
 
