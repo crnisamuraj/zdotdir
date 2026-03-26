@@ -29,13 +29,14 @@ brew install --cask font-meslo-for-powerlevel10k
 
 Restart your terminal after changing the font.
 
-### 2. Install antidote
-
-[Antidote](https://antidote.sh) is the plugin manager used by this config.
+### 2. Install dependencies
 
 ```zsh
-brew install antidote
+brew install antidote fzf
 ```
+
+- **antidote** — plugin manager used by this config
+- **fzf** — fuzzy finder, used for `Ctrl+R` history search
 
 ### 3. Clone the repo
 
