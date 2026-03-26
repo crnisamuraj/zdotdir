@@ -58,7 +58,13 @@ export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
 [[ -r "$ZDOTDIR/.zshenv" ]] && source "$ZDOTDIR/.zshenv"
 ```
 
-### 4. Configure the prompt
+### 4. Suppress the "Last login" message
+
+```zsh
+touch ~/.hushlogin
+```
+
+### 5. Configure the prompt
 
 Open a new terminal session. Powerlevel10k will launch its interactive configuration wizard automatically. If it doesn't, run:
 
