@@ -1,3 +1,7 @@
+# Only load on Arch-based distros (Arch, CachyOS, Manjaro, etc.)
+[[ -f /etc/arch-release ]] || \
+  grep -qE '^(ID|ID_LIKE)=.*arch' /etc/os-release 2>/dev/null || return
+
 # Path to your oh-my-zsh installation.
 # system installation
 # export ZSH="/usr/share/oh-my-zsh"
