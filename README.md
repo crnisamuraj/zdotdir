@@ -18,6 +18,15 @@ brew install --cask font-meslo-for-powerlevel10k
 
 **Terminal.app:** Preferences → Profiles → (your profile) → Change Font → select `MesloLGS NF`
 
+**VSCode integrated terminal:** The font picker rejects Nerd Fonts with a "monospace only" warning — set it directly in `settings.json` instead:
+
+1. Open Command Palette (`Cmd+Shift+P`) → **Open User Settings (JSON)**
+2. Add:
+   ```json
+   "terminal.integrated.fontFamily": "MesloLGS NF"
+   ```
+3. Reload the window (`Cmd+Shift+P` → **Reload Window**)
+
 Restart your terminal after changing the font.
 
 ### 2. Clone the repo
