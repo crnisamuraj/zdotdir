@@ -2,7 +2,29 @@
 
 Cross-platform Zsh configuration using Powerlevel10k, structured under `$XDG_CONFIG_HOME/zsh`.
 
-## macOS Setup
+## Installation
+
+Clone the repo anywhere and run `install.zsh`. It will install all dependencies and copy config files to the correct location.
+
+```zsh
+git clone https://github.com/crnisamuraj/zdotdir.git ~/path/to/repo
+cd ~/path/to/repo
+zsh install.zsh
+```
+
+Config files are copied to `$XDG_CONFIG_HOME/zsh` (default: `~/.config/zsh`). Pass a custom path as the first argument to override:
+
+```zsh
+zsh install.zsh ~/custom/zdotdir
+```
+
+After install, open a new terminal — Powerlevel10k will launch its configuration wizard automatically. If it doesn't, run `p10k configure`.
+
+---
+
+## macOS Setup (manual)
+
+The steps below are handled automatically by `install.zsh`. They are documented here for reference.
 
 ### 1. Install the font
 
@@ -41,7 +63,7 @@ brew install antidote fzf
 ### 3. Clone the repo
 
 ```zsh
-git clone https://github.com/crnisamuraj/zdotdir.git ~/.config/zsh
+git clone https://github.com/crnisamuraj/zdotdir.git ~/path/to/repo
 ```
 
 ### 4. Set up `~/.zshenv`
