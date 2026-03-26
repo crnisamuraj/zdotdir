@@ -1,3 +1,5 @@
+[[ "$OSTYPE" == linux* ]] || return
+
 # ctrl left and right word jump
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
