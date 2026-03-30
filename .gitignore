@@ -6,3 +6,4 @@
 .zhistory
 .p10k.zsh
 .zhistory-old
+.zsh_sessions/

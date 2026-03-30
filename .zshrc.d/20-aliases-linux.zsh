@@ -1,3 +1,6 @@
+# run only on linux
+[[ "$OSTYPE" == linux* ]] || return
+
 #   -----------------------------
 #   1.  MAKE TERMINAL BETTER
 #   -----------------------------

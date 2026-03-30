@@ -8,8 +8,11 @@ bindkey '^[[1;3C' forward-word
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# Backspace: delete character behind cursor
+#bindkey '^?' backward-delete-char
+
 # Option-Backspace: delete word behind cursor
-bindkey '^?' backward-kill-word
+bindkey '^[^?' backward-kill-word
 
 # Option-Delete: delete word ahead of cursor
 bindkey '^[[3;3~' kill-word
