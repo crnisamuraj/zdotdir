@@ -10,7 +10,6 @@ alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 alias ll='ls -laFh'                         # Preferred 'ls' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
-alias nano='nano -W'                        # Preferred 'nano' implementation
 alias wget='wget -c'                        # Preferred 'wget' implementation (resume download)
 alias c='clear'                             # c:            Clear terminal display
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
