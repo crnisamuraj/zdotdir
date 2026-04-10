@@ -29,3 +29,10 @@ alias zed='zeditor'
 alias switch-monitor-usbc="ddcutil -d 1 setvcp 60 0x10"
 alias switch-monitor-dp="ddcutil -d 1 setvcp 60 0x0f"
 alias switch-monitor-hdmi="ddcutil -d 1 setvcp 60 0x11"
+
+# KWin shortcuts
+alias kwin-debug-console='qdbus6 org.kde.KWin /KWin showDebugConsole'
+alias kwin-expose='dbus-send --session --type=method_call --dest=org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut string:"Expose"'
+alias kwin-overview='dbus-send --session --type=method_call --dest=org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut string:"Overview"'
+alias kwin-grid-view='dbus-send --session --type=method_call --dest=org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut string:"Grid View"'
+alias kwin-shortcut-names='qdbus6 org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.shortcutNames'
