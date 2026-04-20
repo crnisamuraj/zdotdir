@@ -19,5 +19,6 @@ path=(
   /opt/homebrew/{,s}bin(N)
   /home/linuxbrew/.linuxbrew/{,s}bin(N)
   $HOME/.dotnet/tools
+  $HOME/.rd/bin(N)
   $path
 )
