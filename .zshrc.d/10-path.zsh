@@ -6,7 +6,6 @@ typeset -gU path fpath
 
 # Set the list of directories that zsh searches for commands.
 path=(
-  ${ASDF_DATA_DIR:-$HOME/.asdf}/shims(N)
   $HOME/.{,s}bin(N)
   $HOME/.scripts(N)
   $HOME/.local/{,s}bin(N)

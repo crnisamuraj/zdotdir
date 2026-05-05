@@ -5,18 +5,18 @@
 #   1.  MAKE TERMINAL BETTER
 #   -----------------------------
 
-alias cp='cp -iv'                           # Preferred 'cp' implementation
-alias mv='mv -iv'                           # Preferred 'mv' implementation
-alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -laFh'                         # Preferred 'ls' implementation
-alias less='less -FSRXc'                    # Preferred 'less' implementation
-alias wget='wget -c'                        # Preferred 'wget' implementation (resume download)
-alias c='clear'                             # c:            Clear terminal display
-alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
-alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
-alias fix_term='echo -e "\033c"'            # fix_term:     Reset the conosle.  Similar to the reset command
-alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
-alias srczshrc='source ~/.config/.zshrc'    # src:          Reload .zshrc file
+alias cp='cp -iv'                                               # Preferred 'cp' implementation
+alias mv='mv -iv'                                               # Preferred 'mv' implementation
+alias mkdir='mkdir -pv'                                         # Preferred 'mkdir' implementation
+alias ll='ls -laFh'                                             # Preferred 'ls' implementation
+alias less='less -FSRXc'                                        # Preferred 'less' implementation
+alias wget='wget -c'                                            # Preferred 'wget' implementation (resume download)
+alias c='clear'                                                 # c:            Clear terminal display
+alias path='echo -e ${PATH//:/\\n}'                             # path:         Echo all executable Paths
+alias fix_stty='stty sane'                                      # fix_stty:     Restore terminal settings when screwed up
+alias fix_term='echo -e "\033c"'                                # fix_term:     Reset the conosle.  Similar to the reset command
+alias cic='set completion-ignore-case On'                       # cic:          Make tab-completion case-insensitive
+alias srczshrc="source ${ZDOTDIR:-$HOME/.config/zsh}/.zshrc"    # src:          Reload .zshrc file
 
 alias edit='nano'
 alias root-systemsettings5='pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch systemsettings5'

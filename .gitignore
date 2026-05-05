@@ -7,3 +7,4 @@
 .p10k.zsh
 .zhistory-old
 .zsh_sessions/
+.zsh_history.LOCK

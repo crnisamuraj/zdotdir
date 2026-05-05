@@ -7,6 +7,11 @@ mkdir -p "$cache_dir" 2>/dev/null
 #   [[ -d "$d" ]] && fpath+=("$d")
 # done
 
+# Add Homebrew completions to fpath (macOS)
+if [[ -n $HOMEBREW_PREFIX && -d "$HOMEBREW_PREFIX/share/zsh/site-functions" ]]; then
+  fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
+fi
+
 # Initialize completion system before sourcing cached completions.
 autoload -Uz compinit
 compinit
