@@ -14,8 +14,13 @@ fi
 
 # Initialize completion system before sourcing cached completions.
 autoload -Uz compinit
-compinit
-
+zcompdump="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump"
+# Full init only if dump is missing or older than 24h
+if [[ -n $zcompdump(#qN.mh+24) ]]; then
+  compinit -d "$zcompdump"
+else
+  compinit -C -d "$zcompdump"
+fi
 
 # OpenClaw Completion (cached)
 openclaw_cache_file="$cache_dir/openclaw.zsh"

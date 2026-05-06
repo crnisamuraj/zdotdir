@@ -1,5 +1,5 @@
 # set NPM_PACKAGES
-NPM_PACKAGES="${HOME}/.npm"
+# NPM_PACKAGES="${HOME}/.npm"
 
 # Ensure path arrays do not contain duplicates.
 typeset -gU path fpath
