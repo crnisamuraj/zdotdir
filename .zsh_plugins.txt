@@ -9,4 +9,4 @@ zsh-users/zsh-syntax-highlighting
 #ohmyzsh/ohmyzsh path:lib
 #ohmyzsh/ohmyzsh path:plugins/extract
 
-MoonshotAI/zsh-kimi-cli
+#MoonshotAI/zsh-kimi-cli
