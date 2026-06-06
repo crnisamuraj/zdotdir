@@ -8,3 +8,4 @@
 .zhistory-old
 .zsh_sessions/
 .zsh_history.LOCK
+.zshrc.d/99-local.zsh
