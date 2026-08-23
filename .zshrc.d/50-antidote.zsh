@@ -15,7 +15,7 @@ else
 fi
 
 if (( $+functions[antidote] )); then
-  antidote load "${ZDOTDIR:-$HOME}/.zsh_plugins.txt"
+  antidote load "${ZDOTDIR:-$HOME}/.zsh_plugins.txt" "${XDG_CACHE_HOME:-$HOME/.cache}/antidote/.zsh_plugins.zsh"
 else
   print -u2 "Error: antidote was not sourced properly; skipping zsh plugin loading."
 fi

@@ -22,7 +22,7 @@ alias edit='nano'
 alias root-systemsettings5='pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true dbus-launch systemsettings5'
 alias root-systemsettings6='pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=6 KDE_FULL_SESSION=true dbus-launch systemsettings'
 
-alias gearlever='flatpak run it.mijorus.gearlever'
+# alias gearlever='flatpak run it.mijorus.gearlever'
 
 alias zed='zeditor'
 
