@@ -1,3 +1,5 @@
+[[ "$OSTYPE" == darwin* ]] || return
+
 # set NPM_PACKAGES
 # NPM_PACKAGES="${HOME}/.npm"
 
@@ -12,12 +14,11 @@ path=(
   $HOME/Applications(N)
   $HOME/.lmstudio/bin(N)
   $NPM_PACKAGES/bin(N)
+  $HOME/.dotnet/tools(N)
+  $HOME/.rd/bin(N)
   /usr/local/{,s}bin(N)
+  /opt/homebrew/{,s}bin(N)
   /{,s}bin(N)
   /usr/{,s}bin(N)
-  /opt/homebrew/{,s}bin(N)
-  /home/linuxbrew/.linuxbrew/{,s}bin(N)
-  $HOME/.dotnet/tools
-  $HOME/.rd/bin(N)
   $path
 )
