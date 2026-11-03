@@ -16,8 +16,8 @@ path=(
   $NPM_PACKAGES/bin(N)
   $HOME/.dotnet/tools(N)
   $HOME/.rd/bin(N)
-  /usr/local/{,s}bin(N)
   /opt/homebrew/{,s}bin(N)
+  /usr/local/{,s}bin(N)
   /{,s}bin(N)
   /usr/{,s}bin(N)
   $path
